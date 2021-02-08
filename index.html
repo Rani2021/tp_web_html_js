@@ -85,9 +85,17 @@
         </style>
         
 	</head>
-	<body onload="showCity()">
-    
+	<body>
+
     <h1>TP Météo Html</h1>
+    <label for="ville">Choisissez une ville:</label>
+    <select name="villes" id="ville" onchange=showCity()>
+        <option value="">--Selectionnez votre ville--</option>
+        <option value="lyon">Lyon</option>
+        <option value="paris">Paris</option>
+        <option value="lille">Lille</option>
+
+    </select>
     <div class="direction">
     <div class="lyon">
       <h2>Lyon</h2>
