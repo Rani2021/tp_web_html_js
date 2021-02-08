@@ -2,6 +2,11 @@
 <html>
 	<head>
 	  <charset="UTF-8">
+
+        <script type="javascript">
+            let villeCourante = "Lyon"
+            function showCity() { console.log(villeCourante); }
+        </script>
         <link rel="stylesheet" type="text/css" href="mystyle.css">
          <style> 
         h1 { 
@@ -78,8 +83,9 @@
          width: 1350px;
     }
         </style>
+        
 	</head>
-	<body>
+	<body onload="showCity()">
     
     <h1>TP Météo Html</h1>
     <div class="direction">
