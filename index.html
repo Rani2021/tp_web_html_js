@@ -1,87 +1,16 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
-	  <charset="UTF-8">
+        <meta charset="UTF-8"/>
 
-        <script type="text/javascript">
-            let villeCourante = "Lyon"
-            function showCity() { console.log(villeCourante); }
+        <script type="text/javascript" src="meteo.js">
+            
         </script>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-         <style> 
-        h1 { 
-            color: rgb(255, 255, 255);
-            background-color: rgb(48, 44, 44);
-            height: 60px;
-            text-align: center;
-            padding-top: 10px;
-             }
-        h2 {
-            
-            color: black;
-            font-weight: bold;
-            
-            
-            
-        }
-        p {
-            float:left;
-           
-        }
-       
-        .lyon {
-            
-            background-color: gray;
-            width: 400px;
-            height: 120px;
-            margin: 0 20px;
-           
-         
-        }
 
-        .paris {
-            
-            background-color: gray;
-            width: 400px;
-            height: 120px;
-            margin: 0 20px;
-       
-        }
-       .lille{
-            
-            background-color: gray;
-            width: 400px;
-            height: 120px;
-            margin: 0 20px;
-           
-        }
-      .direction {
-        display: inline-flex;
-        flex-direction: row;
-      
-         margin: 0 3px;
-         justify-content: space-around;
-         flex-wrap: wrap;
-         
-      }
-      @media (max-width: 768px) {
-  .direction div {
-    flex: 0 1 50%;
-  }
-}
-     
-      img {
-          float: inline-start;
-        }
-    .foot {
-        margin-top: 20px;
-        background-color: gray;
-        position: absolute;
-         bottom: 5px; 
-         height: 75px; 
-         border-top-width: 5px;
-         width: 1350px;
-    }
+        <link rel="stylesheet" type="text/css" href="meteo.css">
+         <style> 
+                
         </style>
         
 	</head>
@@ -97,31 +26,29 @@
 
     </select>
     <div class="direction">
-    <div class="lyon">
-      <h2>Lyon</h2>
-      <P>10 °c, Averses eparses</P>
-      <img  src="https://d30y9cdsu7xlg0.cloudfront.net/png/737641-84.png" 
-      alt="Meteo Lyon lundi 07-02-2021" width="60" height="40">
+        <div id="lyon" class="city">
+            <h2>Lyon</h2>
+            <P>10 °c, Averses eparses</P>
+            <img  src="https://d30y9cdsu7xlg0.cloudfront.net/png/737641-84.png" 
+            alt="Meteo Lyon lundi 07-02-2021" width="60" height="40">
+        </div>
+        <div id="paris" class="city">
+            <h2>Paris</h2>
+            <P>1 °c, Nuageux</P>
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/2449772-84.png" 
+            alt="Meteo Paris lundi 07-02-2021"  width="60" height="40">
+        </div>
+        <div id="lille" class="city">
+            <h2>Lille</h2>
+            <P>-3 °c, Averses de neiges</P>
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/927272-84.png" 
+            alt="Meteo Lyon lundi 07-02-2021"  width="60" height="40">
+        </div>
     </div>
-    <div class="paris">
-      <h2>Paris</h2>
-      <P>1 °c, Nuageux</P>
-      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/2449772-84.png" 
-      alt="Meteo Paris lundi 07-02-2021"  width="60" height="40">
-    </div>
-    <div class="lille">
-      <h2>Lille</h2>
-      <P>-3 °c, Averses de neiges</P>
-      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/927272-84.png" 
-      alt="Meteo Lyon lundi 07-02-2021"  width="60" height="40">
-    </div>
-</div>
     </body>
     <div class="foot">
     <footer>
         Abdelghani OZAYO
-   
-     
             |
         <div>
                 <span >
